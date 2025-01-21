@@ -12,6 +12,9 @@ export class TestController {
 
   @Get()
   async reset() {
-    return this.testService.findOne({id: 1});
+    return {
+      message: 'voila',
+      result: this.testService.findOne({id: 1})
+    };
   }
 }
