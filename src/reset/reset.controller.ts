@@ -33,9 +33,9 @@ export class ResetController {
     const text = `Welcome to the application. To confirm the email address, click here: <a href='${url}'>${url}</a>`;
 
     await this.mailerService.sendMail({
-      to: email,
+      email: email,
       subject: 'Réinitialisation du mot de passe',
-      html: text,
+      template: text,
     });
 
     return {
