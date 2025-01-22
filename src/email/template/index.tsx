@@ -1,6 +1,6 @@
 import { Button, Html } from '@react-email/components';
 import * as React from 'react';
-import './index.css';
+import 'index.css';
 
 export default function Email({ url }) {
   return (
