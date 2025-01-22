@@ -12,7 +12,7 @@ export default function Email({ url }) {
           className={'container'}
           style={{ background: 'red', width: '500px', height: '500px' }}
         >
-          <h1 style={{ fontSize: '48px' }}>Test</h1>
+          <h1 style={{ fontSize: '48px' }}>{url}</h1>
         </div>
         Click me
       </Button>
